@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>validate</title>
+<script type="text/javascript" src="./js/validate.js"></script>
+<script type="text/javascript">
+	function f_validateId() {
+		var id = document.getElementById("member_id").value;
+		if (validateIdentify(id)) {
+			alert("true");
+		}else{
+			alert("false")
+		}
+	}
+</script>
+</head>
+<body>
+	<h3>아이디 인증</h3>
+	<input type="text" id="member_id" name="member_id" /> <button onclick="f_validateId();">확인</button>
+</body>
+</html>

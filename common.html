@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>validate</title>
+<script type="text/javascript" src="./js/common.js"></script>
+<script type="text/javascript">
+	function f_isNull() {
+		var id = document.getElementById("isnull").value;
+		if (isNull(id)) {
+			alert("true");
+		}else{
+			alert("false")
+		}
+	}
+</script>
+</head>
+<body>
+	<h3>공백 및 null 확인</h3>
+	<input type="text" id="isnull" name="isnull" /> <button onclick="f_isNull();">확인</button>
+</body>
+</html>
